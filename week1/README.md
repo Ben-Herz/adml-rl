@@ -12,12 +12,12 @@ By the end of this practical lab exercise, you will be able to:
 ## 📁 Materials
 
 ### Lecture Examples
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/week1/week1_lecture_examples.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zhaw-physical-ai/adml-rl/blob/main/week1/week1_lecture_examples.ipynb)
 
 Interactive notebook used during lecture to demonstrate RL concepts.
 
 ### Lab Assignment
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/week1/week1_lab_assignment.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zhaw-physical-ai/adml-rl/blob/main/week1/week1_lab_assignment.ipynb)
 
 Your hands-on exercise: implement bandit algorithms from scratch and analyze their performance.
 
