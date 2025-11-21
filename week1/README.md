@@ -1,11 +1,6 @@
 # Week 1: Introduction to Reinforcement Learning & Multi-Armed Bandits
 
-**Course:** Reinforcement Learning - Continuing Education  
-**Institution:** Zurich University of Applied Sciences
-
----
-
-## 🎯 Learning Objectives
+## Learning Objectives
 
 By the end of this practical lab exercise, you will be able to:
 - Understand the basic RL paradigm: agent, environment, actions, and rewards
@@ -24,14 +19,11 @@ Interactive notebook used during lecture to demonstrate RL concepts.
 ### Lab Assignment
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/week1/week1_lab_assignment.ipynb)
 
-Your hands-on exercise - implement bandit algorithms from scratch and analyze their performance.
-
-### Solutions
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/week1/week1_lab_solutions.ipynb)
+Your hands-on exercise: implement bandit algorithms from scratch and analyze their performance.
 
 Complete implementations with detailed explanations. **Available after the submission deadline.**
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Using Google Colab
 1. Click the "Open in Colab" button above
@@ -46,7 +38,7 @@ pip install numpy matplotlib jupyter
 jupyter notebook week1_lab_assignment.ipynb
 ```
 
-## 📊 Lab Structure
+## Lab Structure
 
 Your lab assignment has 7 parts:
 
@@ -74,7 +66,7 @@ Written analysis of your experimental results.
 **Bonus Challenges (Optional)**  
 Try decaying epsilon, optimistic initial values, or other advanced techniques.
 
-## 🔑 Key Concepts
+## Key Concepts
 
 ### Multi-Armed Bandit
 The simplest RL problem where you choose between multiple slot machines ("arms"), each with different reward distributions. Your goal: maximize total rewards over many plays.
@@ -90,28 +82,14 @@ A simple strategy: with probability ε (e.g., 0.1), pick a random arm to explore
 ### Upper Confidence Bound (UCB)
 A smarter strategy that automatically balances exploration and exploitation. It prioritizes arms with high estimated values OR high uncertainty (haven't tried much). Better theoretical guarantees than epsilon-greedy.
 
-## 💡 Tips for Success
-
-**As You Work Through the Lab:**
-1. Read each TODO comment carefully before coding
-2. Test each part before moving to the next
-3. Run cells frequently to catch errors early
-4. Compare your plots to expected behavior
-5. Don't skip the analysis questions - they're crucial!
+## Tips for Success
 
 **Common Pitfalls:**
-- **Array indexing:** Remember Python uses 0-based indexing (Arm 0, Arm 1, Arm 2...)
 - **Incremental updates:** Use the formula: `Q[a] += (reward - Q[a]) / N[a]`
 - **UCB division by zero:** Handle the case when `N[a] = 0`
 - **Random vs randn:** Use `np.random.randn()` for Gaussian, not `np.random.rand()`
 
-**Debugging Strategy:**
-- Print intermediate values to understand what's happening
-- Visualize Q-values and arm counts as you go
-- Start with small numbers (3 arms, 100 steps) for testing
-- Check that optimal arm matches `np.argmax(bandit.means)`
-
-## 🎓 Understanding Your Results
+## Understanding Your Results
 
 **What Good Results Look Like:**
 
@@ -130,7 +108,7 @@ A smarter strategy that automatically balances exploration and exploitation. It 
 - Performance varies wildly between runs
 - Low optimal action rate (30-50%)
 
-## 🔗 Looking Ahead
+## Looking Ahead
 
 **Next Week: Markov Decision Processes (MDPs)**  
 We'll extend bandits to problems with:
@@ -139,7 +117,7 @@ We'll extend bandits to problems with:
 - Delayed rewards (planning ahead matters)
 - Q-learning and dynamic programming
 
-## 📚 Additional Resources
+## Additional Resources
 
 **Want to Learn More?**
 - Sutton & Barto (2018): "Reinforcement Learning: An Introduction" - Chapter 2
@@ -150,7 +128,3 @@ We'll extend bandits to problems with:
 - Contextual bandits (decisions depend on context)
 - Thompson Sampling (Bayesian approach)
 - Non-stationary bandits (reward distributions change over time)
-
----
-
-**Questions?** Ask during class or office hours. Good luck and enjoy your first RL implementation! 🎰🤖
